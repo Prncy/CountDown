@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: UNKNOWN...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="experience-container">
+        <!-- Hero & Countdown Section -->
+        <section class="hero-section">
+            <h1 class="project-title">PROJECT: Loading...</h1>
+            <p class="subtext">Something is approaching. Watch the alignment.</p>
+            
+            <div class="countdown-container" id="countdown">
+                <div class="time-block"><span class="digits" id="days">00</span><span class="label">Days</span></div>
+                <div class="time-block"><span class="digits" id="hours">00</span><span class="label">Hours</span></div>
+                <div class="time-block"><span class="digits" id="minutes">00</span><span class="label">Mins</span></div>
+                <div class="time-block"><span class="digits" id="seconds">00</span><span class="label">Secs</span></div>
+            </div>
+        </section>
+
+        <!-- Interactive Character Theater -->
+        <section class="character-theater" id="characterTheaterSection">
+            <div class="video-viewport" id="videoViewport">
+                <video id="characterVideo" playsinline muted preload="auto">
+                    <source src="./media/q1.webm" type="video/webm">
+                </video>
+                <!-- Cinematic Subtitle Layer -->
+                <div class="cinematic-caption-layer" id="captionOverlay"></div>
+                <!-- Final Cinematic Text Overlays -->
+                <div class="final-words-layer" id="finalWordsOverlay"></div>
+            </div>
+
+            <!-- Interaction Interface Area -->
+            <div class="interaction-interface" id="interactionInterface">
+                <div class="action-deck" id="actionDeck">
+                    <!-- Buttons are dynamically hydrated by dialogue.js map -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Reveal Portal Deck (Visible only when countdown hits zero) -->
+        <section id="portalDeck" class="hidden">
+            <a href="https://malichij02.github.io/icatazCbuWebsite/" class="portal-btn">ENTER THE UNKNOWN</a>
+        </section>
+    </main>
+
+    <script src="dialogue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
