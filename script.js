@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Reveal Countdown Constants Configuration
-    const targetRevealDate = new Date("2026-09-12T13:47:00").getTime();
+    const targetRevealDate = new Date("2026-09-12T14:10:00").getTime();
     
     // Element Anchor Hooks
     const countdownContainer = document.getElementById("countdown");
